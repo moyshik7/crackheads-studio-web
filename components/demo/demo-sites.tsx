@@ -9,15 +9,15 @@ export const SiteDemo = () => {
         {
             title: "Clothing Store",
             category: `E - Commerce Website`,
-            image: "https://i.imgur.com/Q9bxIO6.png",
+            image: "/images/ss/clothing-example.webp",
         }, {
             title: "Vape Store",
             category: "E - Commerce Website",
-            image: "https://i.imgur.com/it1RkRJ.png",
+            image: "/images/ss/vape-example.webp",
         }, {
             title: "Pet Shop",
             category: "E - Commerce Website",
-            image: "https://i.imgur.com/WcJFbRj.png",
+            image: "/images/ss/pet-example.webp",
         },
     ]
 

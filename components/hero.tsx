@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 
 const Hero = () => {
     return (
-        <section className="relative min-h-screen pt-20 pb-32 flex items-center">
+        <section className="relative min-h-screen pt-20 pb-32 flex items-center select-none">
             <div className="container mx-auto px-4 z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <motion.div
@@ -59,7 +59,7 @@ const Hero = () => {
                                     <div className="absolute top-1/3 right-8 w-3/5 h-40 bg-gradient-to-br from-card/80 to-muted/50 backdrop-blur-md rounded-lg border border-white/10 flex items-center justify-center shadow-lg">
                                         <div className="text-center">
                                             <div className="uppercase text-xs tracking-wider text-muted-foreground mb-1">
-                                                Dashboard Report
+                                                Your Website
                                             </div>
                                             <div className="w-full h-6 bg-primary/20 rounded-md mb-2"></div>
                                             <div className="w-4/5 mx-auto h-4 bg-secondary/20 rounded-md"></div>
