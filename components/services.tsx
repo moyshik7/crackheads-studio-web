@@ -6,7 +6,7 @@ import { Briefcase, LockIcon, Clock10Icon, DollarSign } from "lucide-react"
 const Services = () => {
     const services = [
         {
-            title: "Saips In Sore Sryulaing",
+            title: "Why CHoose Us?",
             items: [
                 {
                     icon: <LockIcon className="w-6 h-6" />,

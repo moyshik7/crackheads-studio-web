@@ -4,6 +4,33 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 
 export const AboutSection = () => {
+    const clients = [
+        {
+            name: "Acequad",
+            logo: "/images/clients/acequad.webp",
+        }, {
+            name: "Shiku Shop",
+            logo: "/images/clients/shikushop.jpg",
+        }, {
+            name: "Bangladesh Medical College",
+            logo: "/images/clients/bmc.jpeg",
+        }, {
+            name: "চিত্রলেখা",
+            logo: "/images/clients/chitrolekha.jpg",
+        }, {
+            name: "সন্ধানী",
+            logo: "/images/clients/sandhani.jpg",
+        }, {
+            name: "BMSS",
+            logo: "/images/clients/bmss.jpg",
+        }, {
+            name: "Digitonica",
+            logo: "/images/clients/digitonica.jpg",
+        }, {
+            name: "Tech Solution",
+            logo: "/images/clients/techsolution.jpg",
+        },
+    ]
     return (
         <section className="px-4 md:px-8 py-16">
             <div className="max-w-7xl mx-auto">
@@ -52,10 +79,15 @@ export const AboutSection = () => {
                                 Prestigious clients we have worked with
                             </p>
                             <div className="flex flex-wrap gap-2">
-                                {Array.from({ length: 12 }).map((_, i) => (
+                                {clients.map((_, i) => (
                                     <div
                                         key={i}
                                         className="w-12 h-12 bg-blue-600 rounded-full"
+                                        style={{
+                                            backgroundImage: `url(${_.logo})`,
+                                            backgroundSize: "cover",
+                                            backgroundPosition: "center",
+                                        }}
                                     ></div>
                                 ))}
                             </div>

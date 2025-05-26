@@ -4,53 +4,41 @@ import { motion } from "framer-motion"
 
 const FooterCTA = () => {
     const reviews = [{
-        name: "Siam Rahman",
-        content: "Said something",
+        name: "Mir Mamun",
+        content: "ওয়েবসাইট এর quality দেখে আমার মাথা ক্র্যাক হয়ে গেলো (Get that? crack--heads😉) (sorry for lame joke)",
         delay: 0,
     }, {
-        name: "Prodipta Dey",
-        content: "Said something",
+        name: "Sayed Ishak Miah",
+        content: "কিরে ভাই, ওয়েবসাইট এত ফাস্ট কেন?",
         delay: 0.1,
     }, {
-        name: "Tasnim Tithi",
-        content: "Said something",
+        name: "IDK Who",
+        content: "Vaiyaaa, ekta review dibooo, oita plz website e dekhaben 🥺 (this was actually sent on ngl)",
         delay: 0.2,
     }, {
         name: "Nafisa Rijhum",
-        content: "Said something",
+        content: "২৫ গ্রাম এর দামে একটা ওয়েবসাইট পাইলাম। ভালোই তো",
         delay: 0.3,
     }, {
-        name: "Haydar Subodh",
-        content: "Said something",
+        name: "Muhammad Naiem",
+        content: "চিপি চাপায় পট করতেছিলাম, কয়েকটা পোলাপান আইসা কি ওয়েবসাইট ধরায়ে দিলো।",
         delay: 0.4,
     }, {
-        name: "Aunon Roy",
-        content: "Said something",
+        name: "Muhammad Al-amin",
+        content: "সেক্সি সেক্সি ওয়েবসাইট, সেক্সি সেক্সি এনিমেশন।",
         delay: 0.5,
     }, {
         name: "Inayah Rahman",
-        content: "Said something",
+        content: "এদের ওয়েবসাইটের ডিজাইন আর এনিমেশন দ্দেখলে orgasm হয়ে যায় 😅",
         delay: 0.6,
     }, {
-        name: "Rina",
-        content: "Said something",
+        name: "Saif",
+        content: "আসলাম ক্র্যাক কিনতে, ধরায়ে দিল ওয়েবসাইট, Satisfaction 100%",
         delay: 0.7,
     }, {
         name: "Sadia",
-        content: "Said something",
+        content: "আমার bf Gay ছিল কিন্তু Crackheads Studio এর কাজ দেখার পর Straight হয়ে গেছে।",
         delay: 0.8,
-    }, {
-        name: "Vamika",
-        content: "Said something",
-        delay: 0.9,
-    }, {
-        name: "Keya",
-        content: "Said something",
-        delay: 1,
-    }, {
-        name: "Neha",
-        content: "Said something",
-        delay: 1.1,
     }]
     return (
         <section className="py-20 relative">
@@ -59,6 +47,11 @@ const FooterCTA = () => {
                     <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
                         Reviews
                     </h2>
+
+                    <div className="text-center mt-12 text-sm text-muted-foreground mb-5">
+                        (Not kidding, these was actual messages from our clients)
+                    </div>
+
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {reviews.map((review, index) => (
                             <motion.div
