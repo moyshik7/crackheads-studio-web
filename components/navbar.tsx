@@ -11,7 +11,7 @@ const NavItems = [
     { label: "Services", href: "#" },
     { label: "Product", href: "#" },
     { label: "Clients", href: "#" },
-    { label: "Blog", href: "#" },
+    { label: "Site Builder", href: "/builder" },
     { label: "Contact Us", href: "#" },
 ]
 
