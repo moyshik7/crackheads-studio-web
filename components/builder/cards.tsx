@@ -1,74 +1,21 @@
 "use client"
 
-interface CardData {
-    id: string
-    title: string
-    description: string
-    image: string
-    action?: string
-}
+import type { CardComponentProps } from "@/types/builder/cards"
+import { SampleCardData } from "./cards/sampledata"
 
-const sampleCards: CardData[] = [
-    {
-        id: "1",
-        title: "Amazing Product",
-        description: "This is a great product with amazing features",
-        image: "/placeholder.svg?height=200&width=300",
-        action: "Learn More",
-    },
-    {
-        id: "2",
-        title: "Best Service",
-        description: "We provide the best service in the industry",
-        image: "/placeholder.svg?height=200&width=300",
-        action: "Get Started",
-    },
-    {
-        id: "3",
-        title: "Quality Assured",
-        description: "All our products come with quality guarantee",
-        image: "/placeholder.svg?height=200&width=300",
-        action: "Shop Now",
-    },
-    {
-        id: "4",
-        title: "Fast Delivery",
-        description: "Get your orders delivered in 24 hours",
-        image: "/placeholder.svg?height=200&width=300",
-        action: "Order Now",
-    },
-    {
-        id: "5",
-        title: "Customer Support",
-        description: "24/7 customer support for all your needs",
-        image: "/placeholder.svg?height=200&width=300",
-        action: "Contact Us",
-    },
-    {
-        id: "6",
-        title: "Money Back",
-        description: "100% money back guarantee on all purchases",
-        image: "/placeholder.svg?height=200&width=300",
-        action: "Learn More",
-    },
-]
 
-interface CardComponentProps {
-    type: "carousel" | "4-grid" | "6-grid" | "full-width"
-    theme?: any
-}
 
 export function CardComponent({ type, theme }: CardComponentProps) {
     const getCards = () => {
         switch (type) {
             case "4-grid":
-                return sampleCards.slice(0, 4)
+                return SampleCardData.slice(0, 4)
             case "6-grid":
-                return sampleCards.slice(0, 6)
+                return SampleCardData.slice(0, 6)
             case "full-width":
-                return sampleCards.slice(0, 1)
+                return SampleCardData.slice(0, 1)
             default:
-                return sampleCards.slice(0, 4)
+                return SampleCardData.slice(0, 4)
         }
     }
 
@@ -102,7 +49,7 @@ export function CardComponent({ type, theme }: CardComponentProps) {
                     Featured Cards
                 </h2>
                 <div className="flex gap-4 overflow-x-auto pb-4">
-                    {sampleCards.map((card) => (
+                    {SampleCardData.map((card) => (
                         <div
                             key={card.id}
                             className="flex-shrink-0 w-80 bg-white rounded-lg shadow-sm border"

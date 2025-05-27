@@ -13,7 +13,7 @@ export function ThemeSelector({
     onThemeChange,
 }: ThemeSelectorProps) {
     return (
-        <div className="space-y-3">
+        <div className="space-y-3 text-black">
             <Label className="text-sm font-medium">Theme</Label>
             <div className="grid grid-cols-1 gap-3">
                 {themes.map((theme) => (
@@ -23,7 +23,7 @@ export function ThemeSelector({
                         className={`p-3 rounded-lg border-2 transition-all ${
                             selectedTheme === theme.id
                                 ? "border-blue-500 bg-blue-50"
-                                : "border-gray-200 hover:border-gray-300"
+                                : "border-blue-300 hover:border-gray-300"
                         }`}
                     >
                         <div className="flex items-center gap-3">

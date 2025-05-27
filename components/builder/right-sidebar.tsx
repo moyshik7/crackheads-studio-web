@@ -37,13 +37,13 @@ export function RightSidebar({
     return (
         <div className="w-80 lg:w-80 md:w-72 bg-white border-l border-gray-200 p-4 overflow-y-auto hidden md:block">
             <div className="space-y-6">
-                <Card>
+                <Card className="bg-emerald-200">
                     <CardHeader>
-                        <CardTitle className="text-lg">Page Settings</CardTitle>
+                        <CardTitle className="text-lg text-black">Page Settings</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-4">
                         <div>
-                            <Label htmlFor="title">Page Title</Label>
+                            <Label htmlFor="title" className="text-black">Page Title</Label>
                             <Input
                                 id="title"
                                 value={meta.title}
@@ -55,7 +55,7 @@ export function RightSidebar({
                         </div>
 
                         <div>
-                            <Label htmlFor="url">Page URL</Label>
+                            <Label htmlFor="url" className="text-black">Page URL</Label>
                             <Input
                                 id="url"
                                 value={meta.url}
@@ -67,7 +67,7 @@ export function RightSidebar({
                         </div>
 
                         <div>
-                            <Label htmlFor="description">
+                            <Label htmlFor="description" className="text-black">
                                 Meta Description
                             </Label>
                             <Textarea
@@ -85,7 +85,7 @@ export function RightSidebar({
                         </div>
 
                         <div>
-                            <Label htmlFor="keywords">Keywords</Label>
+                            <Label htmlFor="keywords" className="text-black">Keywords</Label>
                             <Input
                                 id="keywords"
                                 value={meta.keywords}
@@ -97,7 +97,7 @@ export function RightSidebar({
                         </div>
 
                         <div>
-                            <Label htmlFor="author">Author</Label>
+                            <Label htmlFor="author" className="text-black">Author</Label>
                             <Input
                                 id="author"
                                 value={meta.author}

@@ -174,8 +174,8 @@ export default function WebsiteBuilder() {
 
     if (isPreview) {
         return (
-            <div className="min-h-screen bg-gray-50">
-                <div className="bg-white border-b p-4 flex justify-between items-center">
+            <div className="min-h-screen bg-slate-600">
+                <div className="bg-white p-4 flex justify-between items-center">
                     <h1 className="text-xl font-semibold">
                         Preview: {pageData.meta.title}
                     </h1>
@@ -202,14 +202,14 @@ export default function WebsiteBuilder() {
     }
 
     return (
-        <div className="flex h-screen bg-gray-100">
+        <div className="flex min-h-screen bg-gray-100 font-sans">
             {!isMobile && (
                 <DndProvider backend={HTML5Backend}>
                     <LeftSidebar />
                     <div className="flex-1 flex flex-col">
-                        <div className="bg-white border-b p-4 flex justify-between items-center">
+                        <div className="bg-white p-4 flex justify-between items-center">
                             <h1 className="text-xl font-semibold text-gray-800">
-                                Website Builder
+                                Crackheads - Site Builder
                             </h1>
                             <div className="flex gap-2">
                                 <Button
@@ -218,24 +218,6 @@ export default function WebsiteBuilder() {
                                 >
                                     <Eye className="h-4 w-4 mr-2" />
                                     Preview
-                                </Button>
-                                <Button
-                                    onClick={() => {
-                                        console.log(
-                                            "🐛 DEBUG - Current page data:",
-                                            pageData
-                                        )
-                                        pageData.elements.forEach((el, i) => {
-                                            console.log(
-                                                `🐛 DEBUG - Element ${i}:`,
-                                                el
-                                            )
-                                        })
-                                    }}
-                                    variant="outline"
-                                    size="sm"
-                                >
-                                    Debug State
                                 </Button>
                             </div>
                         </div>
@@ -279,7 +261,7 @@ export default function WebsiteBuilder() {
 
             {isMobile && (
                 <div className="flex-1 flex flex-col">
-                    <div className="bg-white border-b p-4 flex justify-between items-center">
+                    <div className="bg-white p-4 flex justify-between items-center">
                         <h1 className="text-lg font-semibold text-gray-800">
                             Website Builder
                         </h1>
