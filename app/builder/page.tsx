@@ -1,5 +1,5 @@
-import WebsiteBuilder from "@/components/builder/site-builder"
+import WebsiteBuilder from "@/components/builder/website-builder"
 
-export default function Page() {
+export default function BuilderPage() {
   return <WebsiteBuilder />
 }
