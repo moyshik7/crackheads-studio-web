@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 const Hero = () => {
     return (
@@ -25,13 +26,13 @@ const Hero = () => {
                             results for your business. Our expert team delivers
                             cutting-edge web solutions tailored to your needs.
                         </p>
-                        <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+                        <Link href={"/builder"} className="flex flex-wrap gap-4 justify-center lg:justify-start">
                             <Button className="glow-button bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-opacity px-8 py-6 rounded-full">
                                 <span className="relative z-10">
                                     Create a Website
                                 </span>
                             </Button>
-                        </div>
+                        </Link>
                     </motion.div>
 
                     <motion.div
